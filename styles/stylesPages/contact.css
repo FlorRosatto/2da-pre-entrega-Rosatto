@@ -1,0 +1,131 @@
+/* Contact Section Styles */
+#contact {
+    height: 100%;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    padding-top: 80px;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px;
+    padding: 20px;
+    
+}
+
+h2 {
+    font-size: 50px;
+    color: #333;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    line-height: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.contact-info p {
+    line-height: 50px;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 300px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #fe1717;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
