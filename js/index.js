@@ -1,14 +1,20 @@
+import { initializeEvents } from './events.js';
+
 document.addEventListener('DOMContentLoaded', function() {
     console.log("DOM fully loaded and parsed");
-const submitBtn = document.getElementById('submit-btn');
-const countrySelect = document.getElementById('country-select');
-const greetingMessage = document.getElementById('greeting-message');
+    initializeEvents();
+});
 
-submitBtn.addEventListener('click', function() {
-    const selectedCountry = countrySelect.value;
-    if (selectedCountry) {
-        greetingMessage.textContent = `Hello and welcome to our page from ${selectedCountry}!`;
-    } else {
-        greetingMessage.textContent = 'Sorry, we do not teach other countries.';
+function selectPlan(planId) {
+    const selectedPlan = { id: planId, date: new Date() };
+    localStorage.setItem('selectedPlan', JSON.stringify(selectedPlan));
+    alert('You have selected the plan: ' + planId);
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const savedPlan = JSON.parse(localStorage.getItem('selectedPlan'));
+    if (savedPlan) {
+        alert('Your previously selected plan is: ' + savedPlan.id);
     }
-})})
+});

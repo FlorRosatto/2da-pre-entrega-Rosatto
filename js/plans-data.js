@@ -1,0 +1,23 @@
+export const plans = [
+    { 
+        id: 1, 
+        name: "Plan 1", 
+        description: "Basic English Language Plan: 'Starter'", 
+        targetAudience: "Beginners and those looking to build a strong foundation in English.",
+        price: 100 
+    },
+    { 
+        id: 2, 
+        name: "Plan 2", 
+        description: "Intermediate English Language Plan: 'Progressive'", 
+        targetAudience: "Learners with some prior English knowledge aiming to improve their skills.",
+        price: 200 
+    },
+    { 
+        id: 3, 
+        name: "Plan 3", 
+        description: "Advanced English Language Plan: 'Fluency Mastery'", 
+        targetAudience: "Advanced learners striving for fluency and advanced proficiency.",
+        price: 300 
+    }
+];

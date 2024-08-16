@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <!-- css url -->
+         
          <link rel="stylesheet" href="../styles/stylesPages/exams.css">
          <link rel="stylesheet" href="../styles/styles.css">
          
-         <!-- fonts import -->
+         
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;800&display=swap" rel="stylesheet">
+
     <title>Exams Preparation</title>
+
+    <script src="../js/exams.js" type="module"></script>
+    <script src="../js/exams-data.js" type="module"></script>
+    <script src="../js/exams-dom.js" type="module"></script>
+    <script src="../js/exams-events.js" type="module"></script>
+
 </head>
 <body>
     <header >
@@ -28,15 +35,14 @@
             </ul>
         </nav>
     </header>
-    <h1>English Class Levels</h1>
+    <h1>English Assessment Levels</h1>
     <main>
-        <!-- Input and button for searching levels -->
+        
         <input type="text" id="searchInput" placeholder="Search levels...">
         <button id="searchButton">Search</button>
-        
-        <!-- List to display levels -->
+
         <ul id="level-list"></ul>
     </main>
-    <script src="../js/exams.js"></script>
+    
 </body>
 </html>
