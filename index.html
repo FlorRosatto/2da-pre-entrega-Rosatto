@@ -28,6 +28,7 @@
     </header>
     <main>
         <title>Welcome</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <body>
     <div class="welcome-container">
         <h1>Welcome!</h1>
@@ -45,7 +46,26 @@
         <button id="submit-btn">Submit</button>
         <p id="greeting-message"></p>
     </div>
-    
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', () => {
+            const selectedCountry = document.getElementById('country-select').value;
+            if (selectedCountry) {
+                Swal.fire({
+                    title: 'Thank you!',
+                    text: `You selected ${selectedCountry}`,
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                });
+            } else {
+                Swal.fire({
+                    title: 'Oops!',
+                    text: 'Please select a country',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
 
     <section class="sectionPresentation">
             <div class="containerText">
@@ -143,6 +163,9 @@
     <script src="js/exams-events.js" type="module"></script>
     <script src="js/exams.js" type="module"></script>
 
-    
+    <!-- SweetAlert2 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
 </body>
 </html>

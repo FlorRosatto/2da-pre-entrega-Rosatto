@@ -18,3 +18,4 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Your previously selected plan is: ' + savedPlan.id);
     }
 });
+
